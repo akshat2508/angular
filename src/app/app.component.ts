@@ -8,33 +8,21 @@ import { isEqualsGreaterThanToken } from 'typescript';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  name:string = "";
-  display:String = "";
-  email:string = "";
-  getName(event:Event)
+  display = true;
+  btntext:string = "Hide div"
+  valueToMatch:number=0;
+  togDis()
   {
-    const name = (event.target as HTMLInputElement).value;
-    this.name = name;
-  }
+    if(this.display === true)
+    {
+      this.display  = false;
+      this.btntext  = "Show div";
 
-  displayName(event:Event)
-  {
-    this.display = this.name;
-  }
-
-  setName(event:Event)
-  {
-    this.name = "akshat";
-  }
-
-  getEmail(val:string)
-  {
-    this.email = val;
-  }
-
-  setEmail()
-  {
-    this.email = "degault@gmail.com";
+    }
+    else{
+      this.display = true;
+      this.btntext = "Hide div";
+    }
   }
 
 }
