@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, computed, effect, Signal, signal, WritableSignal } from '@angular/core';
 import { isEqualsGreaterThanToken } from 'typescript';
 
 
@@ -8,21 +8,40 @@ import { isEqualsGreaterThanToken } from 'typescript';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  display = true;
-  btntext:string = "Hide div"
-  valueToMatch:number=0;
-  togDis()
-  {
-    if(this.display === true)
-    {
-      this.display  = false;
-      this.btntext  = "Show div";
+//   count = signal(10);
+// x =20;
 
-    }
-    else{
-      this.display = true;
-      this.btntext = "Hide div";
-    }
-  }
+// constructor()
+// {
+//   effect(()=>{
+//     console.log(this.count());
+//   })
+// }
+
+// updateValue()
+// {
+//   this.count.set(this.count()+1);
+// }
+  // data : WritableSignal<number>  = signal(10);
+  // // count: Signal<number> = computed(()=>200);
+  // updateSignal()
+  // {
+  //   // this.data.set("hello");
+  //   this.data.update((val)=> val + 1);
+  // }
+
+  // x = signal(10);
+  // y = signal(20);
+  // z= (()=>this.x() + this.y());
+  // updatedValue()
+  // {
+  //   console.log(this.z());
+  //   this.x.set(200);
+  //   console.log(this.z());
+  // }
+
+
+
+
 
 }
