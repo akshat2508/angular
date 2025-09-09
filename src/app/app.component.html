@@ -1,4 +1,9 @@
-<!-- <h1>computed signal</h1>
+<h1>{{userName()}}</h1>
+<button (click) = "userName.set('Sam')">Update User Name</button>
 
-<button (click) = "updatedValue()">show Value</button> -->
+<h1 
+*ngIf = "count() == 2 && displayHeading" style="background-color: green ;">Page Heading</h1>
 
+<h2>{{count()}}</h2>
+
+<button (click) = "toggleValue()">toggle value</button>
