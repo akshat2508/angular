@@ -1,3 +1,12 @@
-<h1>Ng model two way binding</h1>
-<input  [(ngModel)] = "name"  type="text">
-<h1>{{name}}</h1>
+<h1>To Do List</h1>
+<input [(ngModel)] = "task" type="text" placeholder="enter new Task">
+<br>
+<button (click) = "addTask()">Add task</button>
+
+<div *ngFor= "let task of taskList; track : task.id  ">
+    <ul>
+        <li>{{task.id}}</li>
+        <li>{{task.task}}</li>
+    <li><button (click) = "deleteTask(task.id)">Delete</button></li>
+    </ul>
+</div>

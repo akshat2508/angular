@@ -9,7 +9,18 @@ import { isEqualsGreaterThanToken } from 'typescript';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  task = "";
+  taskList:{id:number ,task:string}[] = [];
 
-  name= " worold";
+  addTask()
+  {
+    this.taskList.push({id:this.taskList.length+1 , task:this.task});
+    console.log(this.taskList);
+    
+  }
 
+  deleteTask(taskID: number)
+  {
+   this.taskList =  this.taskList.filter((item)=>item.id!=taskID);
+  }
 }
