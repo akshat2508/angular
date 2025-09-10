@@ -1,4 +1,5 @@
 import { Component, computed, effect, Signal, signal, WritableSignal } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { isEqualsGreaterThanToken } from 'typescript';
 
 
@@ -9,6 +10,6 @@ import { isEqualsGreaterThanToken } from 'typescript';
 })
 export class AppComponent {
 
-  users=['Anik' , 'Sidhu' , 'sa','peter', 'praveen' , 'bhasker', 'akshat'];
+  name= " worold";
 
 }
