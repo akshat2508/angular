@@ -8,28 +8,7 @@ import { isEqualsGreaterThanToken } from 'typescript';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  userName = signal('akshat');
-  count  =signal(0);
 
-  displayHeading = true;
-  constructor()
-  {
-    effect(()=>{
-      if(this.count( ) == 2)
-      {
-        setTimeout(() => {
-          this.displayHeading = false;
-        }, 2000);
-      }
-    })
-  }
-
-  toggleValue()
-  {
-   this.count.set(this.count() +1);
-  }
-
-
-
+  users=['Anik' , 'Sidhu' , 'sa','peter', 'praveen' , 'bhasker', 'akshat'];
 
 }
