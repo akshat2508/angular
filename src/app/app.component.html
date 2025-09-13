@@ -1,12 +1,11 @@
-<h1>To Do List</h1>
-<input [(ngModel)] = "task" type="text" placeholder="enter new Task">
-<br>
-<button (click) = "addTask()">Add task</button>
+<!-- <h1 style="background-color: red;">dynamic style</h1> -->
 
-<div *ngFor= "let task of taskList; track : task.id  ">
-    <ul>
-        <li>{{task.id}}</li>
-        <li>{{task.task}}</li>
-    <li><button (click) = "deleteTask(task.id)">Delete</button></li>
-    </ul>
-</div>
+<h1
+ [style.backgroundColor] = "bgcolor" 
+ [style.fontSize.px] = "fontSize">dynamic style</h1>
+
+ <h1 [style.fontSize]=" zoom ? headingSizeBig : headingSizeSmall ">
+    Heading
+ </h1>
+
+ <button (click) = "changeSize()">change size</button>
