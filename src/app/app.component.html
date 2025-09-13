@@ -1,11 +1,19 @@
-<!-- <h1 style="background-color: red;">dynamic style</h1> -->
+<h1>*ngFor directives</h1>
 
-<h1
- [style.backgroundColor] = "bgcolor" 
- [style.fontSize.px] = "fontSize">dynamic style</h1>
+<ul>
+    <li *ngFor="let i of students">
+        {{i}}
 
- <h1 [style.fontSize]=" zoom ? headingSizeBig : headingSizeSmall ">
-    Heading
- </h1>
+    </li>
+</ul>
 
- <button (click) = "changeSize()">change size</button>
+
+<ul>
+    <li *ngFor ="let student of studentData">
+        {{student.name}} , 
+        {{student.age}} ,
+        {{student.email}}
+    </li>
+</ul>
+
+

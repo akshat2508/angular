@@ -1,6 +1,6 @@
 import { Component, computed, effect, Signal, signal, WritableSignal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { isEqualsGreaterThanToken } from 'typescript';
+import { EmitFlags, isEqualsGreaterThanToken } from 'typescript';
 
 
 @Component({
@@ -9,19 +9,34 @@ import { isEqualsGreaterThanToken } from 'typescript';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  bgcolor = "green";
-  fontSize = 20;
-
-  headingSizeBig = "40px";
-  headingSizeSmall = "30px";
-  zoom = true;
-
-  changeSize()
-  {
-   this.zoom=!this.zoom;
-  }
-
   
+
+  students =["anil", "sam" ,'peter'];
+
+  studentData =[
+    {
+    name:'Anil',
+    age: '29',
+    email: 'anil@gmail.com'
+    },
+    {
+    name:'Sam',
+    age: '30',
+    email: 'Sam@gmail.com'
+    },
+    {
+    name:'sahil',
+    age: '31',
+    email: 'Sahil@gmail.com'
+    },
+    {
+    name:'sheikjh',
+    age: '32',
+    email: 'sheikhj@gmail.com'
+    },
+]
+
+
 
 
 }
