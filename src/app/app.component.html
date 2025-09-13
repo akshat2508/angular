@@ -1,19 +1,10 @@
-<h1>*ngFor directives</h1>
-
-<ul>
-    <li *ngFor="let i of students">
-        {{i}}
-
-    </li>
-</ul>
+<h1>ngif directive</h1>
 
 
-<ul>
-    <li *ngFor ="let student of studentData">
-        {{student.name}} , 
-        {{student.age}} ,
-        {{student.email}}
-    </li>
-</ul>
-
-
+<div *ngIf = "show;  else elseblock">
+    <a href=""> login</a>
+</div>
+<ng-template #elseblock>
+    
+    <a href="">logout</a>
+</ng-template>
