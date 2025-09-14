@@ -1,10 +1,10 @@
-<h1>ngif directive</h1>
+<h1>*ngSwitch</h1>
+<div [ngSwitch]="color">
 
+<h1  *ngSwitchCase = "'red'" style="background-color: red;">Red color</h1>
+<h1 *ngSwitchCase ="'green'" style="background-color: green;">green color</h1>
+<h1 *ngSwitchCase = "'blue'" style="background-color: yellow;">yellow color</h1>
+<h1 style="background-color: blue;">blue color</h1>
+<h1 style="background-color: pink;">pink color</h1>
 
-<div *ngIf = "show;  else elseblock">
-    <a href=""> login</a>
 </div>
-<ng-template #elseblock>
-    
-    <a href="">logout</a>
-</ng-template>

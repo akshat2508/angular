@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-import { NgIf } from '@angular/common';
+import { NgIf, NgSwitch, NgSwitchCase, NgSwitchDefault } from '@angular/common';
 
 
 @NgModule({
@@ -15,7 +15,10 @@ import { NgIf } from '@angular/common';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgIf
+    NgIf,
+    NgSwitch, 
+    NgSwitchCase,
+    NgSwitchDefault
   ],
   providers: [],
   bootstrap: [AppComponent]
