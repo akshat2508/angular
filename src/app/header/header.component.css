@@ -1,0 +1,11 @@
+ul{
+        display: flex;
+    color: black;
+    background: lightgray;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+.active{
+    background-color: green;
+}

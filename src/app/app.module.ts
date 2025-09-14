@@ -9,6 +9,8 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -17,6 +19,8 @@ import { RouterLink, RouterOutlet } from '@angular/router';
     ContactComponent,
     AboutComponent,
     LoginComponent,
+    HeaderComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
