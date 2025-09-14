@@ -11,7 +11,7 @@ import { EmitFlags, isEqualsGreaterThanToken } from 'typescript';
 export class AppComponent {
   
 
-  color ="green";
+
 
 
 
