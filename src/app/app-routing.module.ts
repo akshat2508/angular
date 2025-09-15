@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {path: 'about' , component:AboutComponent},
@@ -12,7 +13,8 @@ const routes: Routes = [
       {path: 'contact' , component:ContactComponent},
       {path: 'header' , component:HeaderComponent},
       {path:'home' ,component:HomeComponent},
-      {path: '' , redirectTo:'home' , pathMatch:"full"}
+      {path: '' , redirectTo:'home' , pathMatch:"full"},
+      {path:'**' , component:PageNotFoundComponent},
 
 
 ];
