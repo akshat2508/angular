@@ -12,6 +12,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     HeaderComponent,
     HomeComponent,
     PageNotFoundComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
