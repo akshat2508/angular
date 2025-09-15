@@ -15,9 +15,15 @@ constructor(private route:ActivatedRoute){}
 
 ngOnInit()
 {
-  this.route.queryParams.subscribe(params=>{
-     this.userName=(params['name']);
+  // this.route.queryParams.subscribe(params=>{
+  //    this.userName=(params['name']);
       
+  // })
+
+
+  this.route.data.subscribe(data=>{
+    this.userName= (data['name']);
+    
   })
 }
 

@@ -14,7 +14,7 @@ const routes: Routes = [
       {path: 'contact' , component:ContactComponent},
       {path: 'header' , component:HeaderComponent},
       {path:'home' ,component:HomeComponent},
-      {path: 'profile' ,component:ProfileComponent},
+      {path: 'profile' ,component:ProfileComponent, data:{name:'Akshat Paul'}},
       {path: '' , redirectTo:'home' , pathMatch:"full"},
       {path:'**' , component:PageNotFoundComponent},
 
