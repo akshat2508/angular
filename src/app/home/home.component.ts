@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router , RouterLink } from '@angular/router';
 
 @Component({
   selector: '/',
@@ -7,10 +7,32 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-
-  constructor(private router:Router){}
-  goToProfile()
+users = [
   {
-    this.router.navigate(['profile'], {queryParams:{name: 'Akshat Paul'}});
+    id: '1',
+    name:'Anil',
+    age: 20,
+    email: 'anil@gmail.com'
+  },
+   {
+    id: '2',
+    name:'akshat',
+    age: 20,
+    email: 'akshat@gmail.com'
+  },
+   {
+    id: '3',
+    name:'vishwas',
+    age: 20,
+    email: 'vishwas@gmail.com'
+  },
+   {
+    id: '4',
+    name:'satyam',
+    age: 20,
+    email: 'satyam@gmail.com'
   }
+]
+
+  
 }

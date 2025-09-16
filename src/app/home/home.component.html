@@ -1,10 +1,8 @@
-<h1>home works</h1>
-
-<!-- <a routerLink ="/profile">Go To Profile Page</a> -->
-
-<!-- <a [routerLink]="['/profile', {name: 'Akshat paul'}]">Go to Profile Page</a> -->
+<h1>User List</h1>
 
 
-<!-- <button (click)="goToProfile()">Go to profile Page</button>-->
-
-<a routerLink="/profile">Go To Profile</a>
+<div *ngFor = "let user of users; track users.id">
+    <ul>
+        <li><a routerLink="/user/{{user.id}}/{{user.name}}/{{user.email}}">{{user.name}}</a></li>
+    </ul>
+</div>

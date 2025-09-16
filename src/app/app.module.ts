@@ -13,6 +13,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProfileComponent } from './profile/profile.component';
+import { UserComponent } from './user/user.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { ProfileComponent } from './profile/profile.component';
     HomeComponent,
     PageNotFoundComponent,
     ProfileComponent,
+    UserComponent,
   ],
   imports: [
     BrowserModule,
